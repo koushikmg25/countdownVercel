@@ -1,0 +1,84 @@
+/* ---------- Global Styles ---------- */
+
+body {
+    background-color: rgb(78, 78, 87); /* Dark gray background */
+    color: azure;                     /* Light text color for readability */
+    display: flex;                    /* Center everything horizontally */
+    justify-content: center;         /* Align center horizontally */
+    align-items: center;             /* Align center vertically */
+    margin: 0;                        /* Remove default margin */
+    height: 100vh;                    /* Full viewport height */
+    font-family: Arial, Helvetica, sans-serif; /* Clean font */
+}
+
+/* ---------- Container Styles ---------- */
+
+.container {
+    width: 80%;                       /* Responsive width */
+    max-width: 650px;                /* Limit max width for readability */
+    margin: 0 auto;                  /* Center container */
+    background-color: rgb(117, 117, 125); /* Lighter gray background for contrast */
+    padding: 20px;                   /* Space inside the box */
+    border-radius: 10px;             /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* ---------- Heading Styles ---------- */
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;              /* Center the main heading */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* ---------- Countdown Timer Styles ---------- */
+
+#countdown {
+    display: flex;                   /* Horizontal layout */
+    justify-content: space-around;  /* Space out the time blocks */
+    gap: 10px;                       /* Gap between blocks (for smaller screens) */
+    flex-wrap: wrap;                /* Allow wrapping on smaller screens */
+    margin-bottom: 1.5rem;
+}
+
+#countdown div {
+    text-align: center;
+    padding: 30px;
+    background: #dad7d7;            /* Light background for time blocks */
+    border-radius: 5px;             /* Rounded corners */
+    color: black;                   /* Black text for contrast */
+    display: flex;
+    flex-direction: column;        /* Stack number above label */
+    min-width: 80px;               /* Ensure consistent width on all blocks */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+span {
+    font-size: xx-large;           /* Make numbers big and prominent */
+    font-weight: bold;
+}
+
+/* ---------- Progress Bar Styles ---------- */
+
+.progress-container {
+    background: white;             /* White background for bar container */
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;             /* Hide overflow on rounded corners */
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2); /* Inset shadow for 3D effect */
+}
+
+#progress-bar {
+    background: rgb(146, 227, 25); /* Green bar for visual progress */
+    width: 0%;                    /* Start at 0% width */
+    height: 100%;
+    transition: width 1s ease-in-out; /* Smooth animation on width change */
+    border-radius: 5px 0 0 5px;   /* Rounded on the left side */
+}
